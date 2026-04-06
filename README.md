@@ -67,4 +67,4 @@ To run and explore these samples, ensure you have the following:
 
 This repository provides practical examples of implementing annotation and form data persistence in Xamarin applications using the PDF Viewer. The samples demonstrate how to retain user interactions with PDF documents and deliver a reliable and consistent document experience across platforms.
 
-For more details, refer to the official Syncfusion https://help.syncfusion.com/document-processing/pdf/pdf-viewer/xamarin/overview and https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.html.
+For more details, refer to the official Syncfusion [documentation](https://help.syncfusion.com/document-processing/pdf/pdf-viewer/xamarin/overview) and [API reference](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.html)
