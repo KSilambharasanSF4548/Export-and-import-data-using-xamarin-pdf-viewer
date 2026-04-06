@@ -1,45 +1,70 @@
 # Export-and-import-data-using-xamarin-pdf-viewer
-This repository contains the sample that demonstrates exporting/importing of annotations and form data using Xamarin PDF Viewer
+
+This repository contains a sample application that demonstrates how to export and import annotations and form data using the Xamarin PDF Viewer.
+
 ## Overview
-This repository contains Xamarin sample applications that demonstrate how to export and import annotations and form field data using the Xamarin PDF Viewer. The samples are intended to help developers understand how to persist user interactions with PDF documents and restore them when needed, without modifying the original PDF file.
-PDF documents often include interactive elements such as annotations (highlights, shapes, text notes, ink drawings) and form fields (text boxes, checkboxes, radio buttons, and signatures). This repository focuses on showing how these elements can be extracted, saved externally, and reapplied to the same or another PDF document later.
-These techniques are useful for maintaining document state across app restarts, syncing data between devices, or sharing user-generated content in collaborative workflows.
 
-### Export and Import Annotations
-The annotation sample demonstrates how users can add annotations to a PDF document loaded in the Xamarin PDF Viewer and then export those annotations programmatically. The exported annotation data can be saved as a file or stream and stored locally or remotely.
-The import functionality allows the previously exported annotation data to be reapplied to the PDF document. Once imported, all annotations appear in their original positions with the same properties, such as color, size, opacity, and type.
-This workflow is commonly used in document review systems, feedback applications, and collaborative platforms where annotations need to be preserved or shared.
+This repository provides Xamarin sample applications that demonstrate how to export and import annotations and form field data using the Xamarin PDF Viewer. These samples help developers understand how to persist user interactions with PDF documents and restore them later without modifying the original PDF file.
 
-### Export and Import Form Data
-The form data sample focuses on working with interactive PDF form fields. Users can fill out form fields within the PDF Viewer, and the application can export the entered values independently of the PDF document.
-Exported form data can later be imported back into the PDF Viewer to automatically populate the corresponding fields. This allows applications to save partially completed forms, restore form values after restarting the app, or transfer form data across devices.
-This scenario is particularly useful for business forms, surveys, applications, and any workflow where PDF forms are used for data collection.
+PDF documents often contain interactive elements such as annotations (highlights, shapes, text notes, and ink drawings) and form fields (text boxes, checkboxes, radio buttons, and signatures). This repository focuses on extracting these elements, storing them externally, and reapplying them to the same or another PDF document.
 
-### Key Capabilities Demonstrated
+These techniques are useful for preserving document state across app restarts, synchronizing data across devices, and enabling collaborative document workflows.
 
-Integrating Xamarin PDF Viewer into mobile applications
-Exporting PDF annotations created by users
-Importing previously saved annotations
-Exporting PDF form field values
-Importing form data and auto-filling form fields
-Preserving user input across sessions
-Working with PDF streams and external storage
+## Supported Platforms
 
+The sample supports the following platforms:
 
-### Prerequisites
-To run and understand these samples, you should have:
+- Android  
+- iOS  
+- UWP (Universal Windows Platform)
 
-Visual Studio with Xamarin development support
-Basic knowledge of Xamarin (Android, iOS, or Forms)
-Xamarin PDF Viewer configured in the project
-A supported mobile platform (Android or iOS)
+All export and import functionalities are implemented consistently across the supported platforms.
 
-### Additional Notes
+## Export and Import Annotations
 
-The original PDF document remains unchanged during export and import operations
-Annotation and form data can be stored in files, databases, or transmitted over a network
-These samples are designed for learning and demonstration purposes
+This sample demonstrates how annotations added to a PDF document using the Xamarin PDF Viewer can be exported programmatically. The exported annotation data can be saved as a file or stream and stored locally or remotely.
 
+The import functionality allows previously exported annotation data to be reapplied to the PDF document. After import, annotations appear in their original positions with the same properties, such as color, size, opacity, and type.
+
+This workflow is commonly used in document review systems, feedback tools, and collaborative applications where annotations need to be preserved or shared.
+
+## Export and Import Form Data
+
+This sample focuses on interactive PDF form fields. Users can fill out form fields within the PDF Viewer, and the application can export the entered values independently of the original PDF document.
+
+The exported form data can later be imported to automatically populate the corresponding fields. This enables applications to save partially completed forms, restore form data after app restarts, or transfer form information across devices.
+
+This scenario is especially useful for business forms, surveys, and data collection workflows.
+
+## Key Capabilities Demonstrated
+
+The sample demonstrates the following capabilities:
+
+- Integrating Xamarin PDF Viewer into applications  
+- Exporting user-created PDF annotations  
+- Importing previously saved annotations  
+- Exporting PDF form field data  
+- Importing and auto-filling form data  
+- Preserving user input across application sessions  
+- Working with PDF streams and external storage  
+
+## Prerequisites
+
+To run and explore these samples, ensure you have the following:
+
+- Visual Studio with Xamarin development support  
+- Basic knowledge of Xamarin.Forms development  
+- Xamarin PDF Viewer properly configured in the project  
+- A supported platform environment (Android, iOS, or UWP)  
+
+## Additional Notes
+
+- The original PDF document remains unchanged during export and import operations  
+- Annotation and form data can be stored in files, databases, or transmitted over a network  
+- These samples are intended for learning and demonstration purposes  
 
 ## Conclusion
-This repository provides practical examples of how to implement annotation and form data persistence in Xamarin applications using the PDF Viewer. By following these samples, developers can build robust applications that retain user interactions with PDF documents and deliver a smooth, reliable document experience.
+
+This repository provides practical examples of implementing annotation and form data persistence in Xamarin applications using the PDF Viewer. The samples demonstrate how to retain user interactions with PDF documents and deliver a reliable and consistent document experience across platforms.
+
+For more details, refer to the official Syncfusion https://help.syncfusion.com/document-processing/pdf/pdf-viewer/xamarin/overview and https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.html.
